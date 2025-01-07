@@ -28,6 +28,7 @@
 	}
 }
 
+/* Boilerplate - Optional: for disabled element */
 .field-file-input[disabled] {
 	color: #777777;
 
