@@ -12,11 +12,6 @@
 		&>span {
 			font-weight: normal;
 		}
-
-		&:is(legend) {
-			margin-bottom: 0.25rem;
-			padding: 0;
-		}
 	}
 
 	& .field-help-text {
@@ -37,10 +32,5 @@
 			color: darkred;
 			display: block;
 		}
-	}
-
-	&:is(fieldset) {
-		border: 0;
-		padding: 0;
 	}
 }
