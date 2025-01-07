@@ -1,0 +1,46 @@
+/* Boilerplate: https://github.com/JamesRobertHugginsNgo/field/blob/68fbb3bcc852715463031e1b3f7180ebb8938e0e/src/style.css */
+/* Boilerplate: https://github.com/JamesRobertHugginsNgo/field/blob/1.0.0/src/style.css */
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	& .field-label {
+		font-weight: bold;
+
+		&>span {
+			font-weight: normal;
+		}
+
+		&:is(legend) {
+			margin-bottom: 0.25rem;
+			padding: 0;
+		}
+	}
+
+	& .field-help-text {
+		color: #777777;
+		font-size: 0.875em;
+	}
+
+	& .field-error-text {
+		display: none;
+	}
+
+	&.field-error.show-field-error {
+		& .field-label {
+			color: darkred;
+		}
+
+		& .field-error-text {
+			color: darkred;
+			display: block;
+		}
+	}
+
+	&:is(fieldset) {
+		border: 0;
+		padding: 0;
+	}
+}

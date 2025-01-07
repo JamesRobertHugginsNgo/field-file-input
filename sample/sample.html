@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../src/style.css">
+	<link rel="stylesheet" href="field.css">
+	<link rel="stylesheet" href="page-width.css">
+	<style>
+		body {
+			margin: 0;
+		}
+
+		main {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+
+		.field {
+			margin-bottom: 1rem;
+			margin-top: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<div class="page-width">
+			<div class="field">
+				<label for="file-field" class="field-label">File Field <span>(optional)</span></label>
+				<div class="field-help-text">Help text</div>
+				<input name="file-field" type="file" class="field-file-input" id="file-field">
+				<div class="field-help-text">Help text</div>
+				<div class="field-error-text"></div>
+			</div>
+
+			<div class="field">
+				<label for="disabled-file-field" class="field-label">Disabled File Field <span>(optional)</span></label>
+				<div class="field-help-text">Help text</div>
+				<input disabled name="disabled-file-field" type="file" value="Text value" class="field-file-input" id="disabled-file-field">
+				<div class="field-help-text">Help text</div>
+				<div class="field-error-text"></div>
+			</div>
+
+			<div class="field field-error">
+				<label for="file-field-with-error" class="field-label">File Field With Error <span>(optional)</span></label>
+				<div class="field-help-text">Help text</div>
+				<input name="file-field-with-error" type="file" class="field-file-input" id="file-field-with-error">
+				<div class="field-help-text">Help text</div>
+				<div class="field-error-text">Error text</div>
+			</div>
+
+			<div class="field field-error show-field-error">
+				<label for="file-field-with-show-error" class="field-label">File Field With Show Error <span>(optional)</span></label>
+				<div class="field-help-text">Help text</div>
+				<input name="file-field-with-show-error" type="file" class="field-file-input" id="file-field-with-show-error">
+				<div class="field-help-text">Help text</div>
+				<div class="field-error-text">Error text</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
